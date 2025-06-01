@@ -13,18 +13,6 @@ const ContactSchema = Yup.object().shape({
   message: Yup.string().min(10, 'Message is too short').required('Required'),
 });
 
-// Google Maps configuration
-// const mapContainerStyle = {
-//   width: '100%',
-//   height: '100%'
-// };
-
-// // Example coordinates for a location in Uttar Pradesh, India
-// // These coordinates point to Lucknow, UP - you can adjust based on your actual office location
-// const center = {
-//   lat: 26.8467, 
-//   lng: 80.9462
-// };
 
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
